@@ -10,8 +10,8 @@ def hello():
 
 @app.route("/about")
 def world():
-    
-    return render_template('about.html')
+    name="Milton"
+    return render_template('about.html',passing_name=name)
 
 
 app.run()
